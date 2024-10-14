@@ -36,7 +36,7 @@ export default function App() {
 
       const images = ['1.png', '2.png', '3.png'];
       for (const imageName of images) {
-        const imageResponse = await fetch(`/uploads/${grade}/${imageName}`);
+        const imageResponse = await fetch(`/public/${grade}/${imageName}`);
         if (!imageResponse.ok) {
           throw new Error(`Error al obtener la imagen ${imageName}`);
         }
@@ -119,7 +119,7 @@ export default function App() {
       >
         <Box sx={{ position: 'relative', mb: 2 }}>
           <img
-            src="/uploads/imgs/KeyPointIcon.png"
+            src="/public/imgs/KeyPointIcon.png"
             alt="Key Point Academy Logo"
             width={200}
             height={60}
