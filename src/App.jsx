@@ -126,11 +126,10 @@ export default function App() {
           />
         </Box>
         <Typography variant="h5" component="h1" gutterBottom align="center">
-          Generador de Libretas Escolares
+          Progress Report Generator
         </Typography>
         <Typography variant="body1" gutterBottom align="center" sx={{ mb: 3 }}>
-          Sube un archivo Excel/CSV con la información de los alumnos y obtén un ZIP con sus
-          libretas escolares en PDF.
+          Upload an Excel/CSV file with the students' information and get a ZIP with their report cards in PDF
         </Typography>
         {['3K', '4K', '5K'].map((grade) => (
           <Box key={grade} sx={{ width: '100%', mb: 2 }}>
@@ -150,7 +149,7 @@ export default function App() {
                 startIcon={isLoading ? <CircularProgress size={24} /> : <Upload />}
                 fullWidth
               >
-                {isLoading ? 'Procesando...' : `Subir archivo Excel/CSV ${grade}`}
+                {isLoading ? 'Procesando...' : `Upload File Excel/CSV ${grade}`}
               </Button>
             </label>
           </Box>
@@ -163,7 +162,7 @@ export default function App() {
           startIcon={<Download />}
           fullWidth
         >
-          Descargar Libretas (ZIP)
+          Download Report Cards (ZIP)
         </Button>
       </Paper>
 
