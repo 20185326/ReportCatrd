@@ -129,7 +129,7 @@ export default function App() {
           Progress Report Generator
         </Typography>
         <Typography variant="body1" gutterBottom align="center" sx={{ mb: 3 }}>
-          Upload an Excel/CSV file with the students' information and get a ZIP with their report cards in PDF
+          Upload yout student roster and download all their report cards in a convenient ZIP file
         </Typography>
         {['3K', '4K', '5K'].map((grade) => (
           <Box key={grade} sx={{ width: '100%', mb: 2 }}>
@@ -149,7 +149,7 @@ export default function App() {
                 startIcon={isLoading ? <CircularProgress size={24} /> : <Upload />}
                 fullWidth
               >
-                {isLoading ? 'Procesando...' : `Upload File Excel/CSV ${grade}`}
+                {isLoading ? 'Procesando...' : `Upload Excel File |  ${grade}`}
               </Button>
             </label>
           </Box>
