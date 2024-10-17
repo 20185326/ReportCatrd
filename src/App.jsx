@@ -168,11 +168,11 @@ export default function App() {
 
       {/* Modal Dialog */}
       <Dialog open={isLoading} onClose={() => {}} disableEscapeKeyDown>
-        <DialogTitle>Procesando...</DialogTitle>
+        <DialogTitle>Processing...</DialogTitle>
         <DialogContent sx={{ display: 'flex', alignItems: 'center' }}>
           <CircularProgress sx={{ mr: 2 }} />
           <DialogContentText>
-            Por favor, espera mientras procesamos tu archivo.
+            Please wait while we process your file.
           </DialogContentText>
         </DialogContent>
       </Dialog>
