@@ -131,7 +131,7 @@ export default function App() {
         <Typography variant="body1" gutterBottom align="center" sx={{ mb: 3 }}>
           Upload yout student roster and download all their report cards in a convenient ZIP file
         </Typography>
-        {['2K', '3K', '4K'].map((grade) => (
+        {['Toddler','2K', '3K', '4K'].map((grade) => (
           <Box key={grade} sx={{ width: '100%', mb: 2 }}>
             <input
               accept=".csv, .xls, .xlsx"
